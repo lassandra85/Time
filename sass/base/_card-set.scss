@@ -1,0 +1,16 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+
+
+    &__item {
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+    }
+
+
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+}
+ 

@@ -1,0 +1,45 @@
+.data {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.data__name {
+    @include fonts(null, 12px, 14px, 0.01em);
+   
+    color: var(--main-cl);
+
+    margin-bottom: 4px;
+}
+
+.data__input {
+    padding: 11px 12px 11px 42px;
+    font-family: inherit;
+    font-size: inherit;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+    border-radius: 4px;
+
+    transition: border-color var(--trans-fast);
+
+    &:focus {
+        border-color: var(--accent-txt-cl);
+        cursor: pointer;
+    }
+}
+
+
+.data__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    fill: var(--link-cl);
+
+    transition: fill var(--trans-fast);
+
+    .data__input:focus + &{
+        fill: var(--accent-txt-cl);
+    }
+}
+

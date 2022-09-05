@@ -1,0 +1,10 @@
+.logo {
+    font-family: var(--secondary-font);
+    color: var(--accent-txt-cl);
+
+    @include fonts(700, 24px, 28px);
+   
+    @media screen and (min-width: 1200px) {
+        @include fonts(700, 26px, 31px);
+    }
+}

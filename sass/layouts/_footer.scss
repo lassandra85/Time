@@ -1,0 +1,162 @@
+.footer {
+    display: flex;
+   
+    background-color: var(--dark-bg-cl);
+    padding: 60px 0;
+    width: 100%;
+}
+
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: baseline;
+        
+    }
+}
+
+.footer-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        gap: 165px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+    }
+}
+
+
+.footer-contact__adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+    }
+    
+}
+
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+
+.footer__logo--accent {
+    color: var(--white);
+}
+
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+    }
+}
+
+
+.footer__item {
+    @include fonts(400, 14px, 24px);
+    
+    transition: color var(--trans-fast);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+
+.footer__item--connection {
+    color: var(--foot);
+}
+
+
+.footer__item--adress {
+    color: var(--white);
+}
+
+
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        margin-left: 70px;
+    }
+}
+
+
+.footer__text {
+   /*  display: flex; */
+
+    @include fonts(null, 14px, 16px);
+    text-transform: uppercase;
+    color: var(--white);
+    
+}
+
+
+.footer__socials-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    @media screen and (max-width: 1199px) {
+        align-items: center;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+}
+
+.footer__subscribe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+
+
+
+    

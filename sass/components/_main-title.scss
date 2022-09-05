@@ -1,0 +1,16 @@
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+
+    @include fonts(900, 26px, 42px, 0.06em);
+
+    max-width: 360px; 
+   
+    
+    @media screen and (min-width: 1200px) {
+        @include fonts(900, 44px, 60px, 0.06em);
+        
+        max-width: 696px;
+    }
+}
